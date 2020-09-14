@@ -21,8 +21,8 @@ library(devtools)
 install_github("trinker/pacman")
 
 ## obtain path
-#(WD <- getwd())
-#if (!is.null(WD)) setwd(WD)
+(WD <- getwd())
+if (!is.null(WD)) setwd(WD)
 
 ## Set path  where you have saved MethCoresProfiler-master
 setwd("~/MethCoresProfiler-master/testData/")
