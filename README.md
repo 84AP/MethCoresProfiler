@@ -78,6 +78,7 @@ library("progress")
 library(pastecs)
 library("cowplot")
 
+It is possible to use the R package "pacman" present in the scripts to install the necessary R packages
 
 ==============================================
 ABOUT THIS PACKAGE:
@@ -116,9 +117,12 @@ Three executable scripts are provided with this version of MethCoresProfiler:
        the population; ii. Clonality Index, i.e., the frequency of methylated cores normalized to the average methylation in the 
        population; iii. in-phase CpGs Index or Stability Index or Entanglement Index, or E, which measures the rate of coupling or 
        association of at least 2 mCpGs (mCpG1 and mCpG2) in the core 
+
 ===============================================
 INSTALLATION:
 ===============================================
+MethCoresProfiler does not require installations
+
 
 PREREQUISITES:
 ===============================================
@@ -132,23 +136,21 @@ MethCoresProfiler SCRIPTS:
 ===============================================
 Extract the all files from the archive and run R scripts in order.
 
-
 ===============================================
 FILES USED AND THEIR PROPER DIRECTORIES:
 ===============================================
-With this distribution are provided three R scripts and eleven functions.
-
+With this distribution are provided three R scripts and twenty-eight functions. The scripts are in the MethCoresProfiler_scripts folder.
 
 ===============================================
 USING MethCoresProfiler:
 ===============================================
-For detailed instructions on the options and input/output formats of the MethCoresProfiler scripts we remand the user to the MethCoresProfiler_help documentation contained in this package.
+Before using MethCores set the path where the MethCoresProfiler_master folder is located in the three scripts (1_MethCores_Extractor.R, 2_MethCOres_Combinator.R, 3_MethCores_Analyst.R)
+For detailed instructions on the options and input/output formats of the MethCoresProfiler scripts we remand the user to the "MethCoresProfiler_help.doc" documentation contained in this package.
 
 
 ===============================================
 KNOWN ISSUES OR BUGS:
 ===============================================
-
 
 
 ===============================================
