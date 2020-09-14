@@ -21,11 +21,11 @@ library(devtools)
 install_github("trinker/pacman")
 
 ## obtain path
-(WD <- getwd())
-if (!is.null(WD)) setwd(WD)
+#(WD <- getwd())
+#if (!is.null(WD)) setwd(WD)
 
 ## Set path  where you have saved MethCoresProfiler-master
-#setwd("~/MethCoresProfiler-master/testData/")
+setwd("~/MethCoresProfiler-master/testData/")
 
 ## Load all required packages
 Packages <- c("vegan", "Hmisc", "data.table", "FunChisq", "psych", "PerformanceAnalytics", "gtools", "ggpubr", "gridExtra", "grid", "rcompanion", "plyr", "tidyr",
@@ -85,7 +85,7 @@ maps=list.files(path = ".", pattern="*.map")
 
 ############### Set parameters
 #Bootstrapping number to do
-b4=10000 #"default" or "fix a number"
+b4="default" #"default" or "fix a number, example:10000"
 y=100
 #Set pvalue
 pvalue=0.0000000001
