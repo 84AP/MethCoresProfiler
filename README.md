@@ -147,6 +147,7 @@ With this distribution are provided three R scripts and twenty-eight functions. 
 USING MethCoresProfiler:
 ===============================================
 Before using MethCores set the path where the MethCoresProfiler_master/test_data/ folder is located in the three scripts (1_MethCores_Extractor.R, 2_MethCOres_Combinator.R, 3_MethCores_Analyst.R). If you open the scripts with RStudio, the path can be set automatically using "getwd" on line 23.
+
 For detailed instructions on the options and input/output formats of the MethCoresProfiler scripts we remand the user to the "MethCoresProfiler_help.doc" documentation contained in this package.
 
 
