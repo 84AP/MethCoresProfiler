@@ -41,7 +41,9 @@ options("scipen"=100, "digits"=2)
 ## Load all required packages
 Packages <- c("vegan", "Hmisc", "data.table", "FunChisq", "psych", "PerformanceAnalytics", "gtools", "ggpubr", "gridExtra", "grid", "rcompanion", "plyr", "tidyr",
               "dplyr", "entropy", "tidyverse", "plotrix", "igraph", "network", "foreach", "doParallel", "Hmisc", "stringr", "stringi", "ggcorrplot", "corrplot",
-              "scales","ggplot2","reshape2","RelValAnalysis")
+              "scales","ggplot2","reshape2","RelValAnalysis","RFLPtools","dendextend","ape","stringdist","reshape","rgl","factoextra","stats","rowr",
+              "mclust","ComplexHeatmap","gplots","caret","png","ggplot2","circlize","cluster","pastecs","cowplot") #"doSNOW","doMC",
+
 Packages %in% loadedNamespaces() # check if the packages are loaded
 # [1] FALSE FALSE
 
@@ -54,7 +56,7 @@ require ("RFLPtools")
 require ("dendextend")
 require("ape")
 require("stringdist")
-library(reshape)
+library("reshape")
 require("vegan")
 library("rgl")
 require("data.table")
@@ -87,10 +89,7 @@ require("doSNOW")
 require("doParallel")
 require("doMC")
 library("progress")
-library(pastecs)
-require("RelValAnalysis")
-library("psych")
-library("cowplot")
+library("pastecs")
 
 
 #Set n processors
