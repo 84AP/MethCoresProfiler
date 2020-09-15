@@ -35,8 +35,8 @@ if (!is.null(WD)) setwd(worDir)
 #args=commandArgs(trailingOnly=T)
 ## Load all required packages
 Packages <- c("vegan", "Hmisc", "data.table", "FunChisq", "psych", "PerformanceAnalytics", "gtools", "ggpubr", "gridExtra", "grid", "rcompanion", "plyr", "tidyr",
-              "dplyr", "entropy", "tidyverse", "plotrix", "igraph", "network", "foreach", "doParallel", "Hmisc", "stringr", "stringi", "ggcorrplot", "corrplot",
-              "scales","ggplot2","reshape2","RelValAnalysis","RFLPtools","dendextend","ape","stringdist","reshape","rgl","factoextra","stats","rowr",
+              "dplyr", "entropy", "tidyverse", "plotrix", "igraph", "network", "foreach", "doParallel", "stringr", "stringi", "ggcorrplot", "corrplot",
+              "scales","ggplot2","reshape2","RelValAnalysis","RFLPtools","dendextend","ape","stringdist","reshape","rgl","factoextra","stats",
               "mclust","ComplexHeatmap","gplots","caret","png","ggplot2","circlize","cluster","pastecs","cowplot") #"doSNOW","doMC",
 
 Packages %in% loadedNamespaces() # check if the packages are loaded
@@ -45,6 +45,10 @@ Packages %in% loadedNamespaces() # check if the packages are loaded
 pacman::p_load(Packages, character.only = TRUE)
 
 Packages %in% loadedNamespaces()
+
+## Install "rowr" Package
+## Package ‘rowr’ was removed from the CRAN repository.
+## Formerly available versions can be obtained from the archive by clicking on this link:https://cran.r-project.org/src/contrib/Archive/rowr/
 
 #args=commandArgs(trailingOnly=T)
 
