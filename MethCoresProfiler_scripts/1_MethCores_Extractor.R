@@ -35,16 +35,16 @@ Packages <- c("vegan", "Hmisc", "data.table", "FunChisq", "psych", "PerformanceA
               "scales","ggplot2","reshape2","RelValAnalysis","RFLPtools","dendextend","ape","stringdist","reshape","rgl","factoextra","stats",
               "mclust","ComplexHeatmap","gplots","caret","png","ggplot2","circlize","cluster","pastecs","cowplot") #"doSNOW","doMC",
 
-## Install "rowr" Package
-## Package ‘rowr’ was removed from the CRAN repository.
-## Formerly available versions can be obtained from the archive by clicking on this link:https://cran.r-project.org/src/contrib/Archive/rowr/
-
 Packages %in% loadedNamespaces() # check if the packages are loaded
 # [1] FALSE FALSE
 
 pacman::p_load(Packages, character.only = TRUE)
 
 Packages %in% loadedNamespaces()
+
+## Install "rowr" Package
+## Package ‘rowr’ was removed from the CRAN repository.
+## Formerly available versions can be obtained from the archive by clicking on this link:https://cran.r-project.org/src/contrib/Archive/rowr/
 
 #args=commandArgs(trailingOnly=T)
 
