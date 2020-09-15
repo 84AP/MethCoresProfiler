@@ -32,7 +32,9 @@ if (!is.null(WD)) setwd(worDir)
 ## Load all required packages
 Packages <- c("vegan", "Hmisc", "data.table", "FunChisq", "psych", "PerformanceAnalytics", "gtools", "ggpubr", "gridExtra", "grid", "rcompanion", "plyr", "tidyr",
               "dplyr", "entropy", "tidyverse", "plotrix", "igraph", "network", "foreach", "doParallel", "Hmisc", "stringr", "stringi", "ggcorrplot", "corrplot",
-              "scales","ggplot2","reshape2","RelValAnalysis")
+              "scales","ggplot2","reshape2","RelValAnalysis","RFLPtools","dendextend","ape","stringdist","reshape","rgl","factoextra","stats","rowr",
+              "mclust","ComplexHeatmap","gplots","caret","png","ggplot2","circlize","cluster","pastecs","cowplot") #"doSNOW","doMC",
+
 Packages %in% loadedNamespaces() # check if the packages are loaded
 # [1] FALSE FALSE
 
