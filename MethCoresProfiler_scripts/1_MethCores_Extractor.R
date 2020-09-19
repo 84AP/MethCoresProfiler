@@ -21,13 +21,13 @@ library(devtools)
 install_github("trinker/pacman")
 
 ## obtain path
-(WD <- getwd())
-WD1=sub("/[^/]+$", "", WD)
-worDir=paste(WD1,"/testData/",sep="")
-if (!is.null(WD)) setwd(worDir)
+#(WD <- getwd())
+#WD1=sub("/[^/]+$", "", WD)
+#worDir=paste(WD1,"/testData/",sep="")
+#if (!is.null(WD)) setwd(worDir)
 
 ## Set path  where you have saved MethCoresProfiler-master
-#setwd("~/MethCoresProfiler-master/testData/")
+setwd("~/MethCoresProfiler-master/testData/")
 
 ## Load all required packages
 Packages <- c("vegan", "Hmisc", "data.table", "FunChisq", "psych", "PerformanceAnalytics", "gtools", "ggpubr", "gridExtra", "grid", "rcompanion", "plyr", "tidyr",
