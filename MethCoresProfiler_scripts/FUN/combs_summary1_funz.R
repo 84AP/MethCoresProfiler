@@ -5,7 +5,8 @@ combs_summary1=function(cl2,sam,clones) {
     #create an empty df
     summary=data.frame(samples=NA, core=NA, Tot=-1, nEpialCore=-1,  FreqEpialCore=-1, nEpialUnici=-1,FreqEpialCoreUnici=-1,FreqEpialMoreFreq=-1)
     #assign name
-    #calculate the number of epialleles
+    summary$samples=sam
+    #calculate numberbof epialleles
     summary$Tot=sum(clones$n_readsCloneForSample)
     combs=tidyr::unite_(cl2[k,], paste(colnames(cl2[k,]), collapse="_"), colnames(cl2[k,]),sep="-")
     colnames(combs)="combs"
