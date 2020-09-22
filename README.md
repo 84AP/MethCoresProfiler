@@ -1,4 +1,4 @@
-# MethCoresProfiler
+## MethCoresProfiler
 MethCoresProfiler-master
 
 =============================================
@@ -136,36 +136,36 @@ Users can install each dependency:
  
 MethCoresProfiler SCRIPTS:
 ===============================================
-Extract the all files from the archive and run R scripts in order.
+Extract all files from the archive, open the Run_MethCoresProfiler_setup file as text, change the PATH of MethCoresProfiler by entering the PATH of the MethCoresProfiler-master folder in and execute the Run_MethCoresProfiler_setup script with Rstudio or R.
 
 ===============================================
 FILES USED AND THEIR PROPER DIRECTORIES:
 ===============================================
-With this distribution are provided three R scripts and twenty-eight functions. The scripts are in the MethCoresProfiler_scripts folder.
+With this distribution are provided five R scripts and twenty-eight functions. The scripts are in the MethCoresProfiler_scripts folder.
 
 ===============================================
 USING MethCoresProfiler:
 ===============================================
 Before using MethCores set the path in the Run_MethCoresProfiler_setup.R:
 
-## Add PATH where is located MethCoresProfiler-master
-MethCoresProfiler=("/Users/antoniopezone/Desktop/NAR_Genomics_and_Bioinformatics_submission_2020/Revisione_I/Inviato/MethCoresProfiler-master/")
+## Add PATH where is located MethCoresProfiler-master folder
+MethCoresProfiler=("/Users/antoniopezone/Desktop/NARGB_2020/MethCoresProfiler-master/")
 
-## Add name of folder in which you have put "cgpos", "meta.map" and one folder with all tab delimited "text file of EpiHaplotypes in BINARY format (file.out)" ## Default is "testData/" in MethCoresProfiler-master folder
+## Add name of folder in which you have put "cgpos", "meta.map" and one folder with all tab delimited "text file of EpiHaplotypes in BINARY format (file.out)" 
+## Default is "testData/" in MethCoresProfiler-master folder
 Data="testData/"
 
 ## Add name of folder containing text file of EpiHaplotypes in BINARY format (file.out) 
-## ## Default is "out/" in MethCoresProfiler-master/testData folder
+## Default is "out/" in MethCoresProfiler-master/testData folder
 input="out/"
 
-## Using Rstudio to Run_MethCoresProfiler_setup.R
+## Use Rstudio to Run_MethCoresProfiler_setup.R
 
 For detailed instructions on the options and input/output formats of the MethCoresProfiler scripts and how to change the parameters we remand the user to the "MethCoresProfiler_help.doc" documentation contained in this package.
 
 ===============================================
 KNOWN ISSUES OR BUGS:
 ===============================================
-
 
 ===============================================
 VERSION HISTORY
