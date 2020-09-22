@@ -149,7 +149,7 @@ USING MethCoresProfiler:
 Before using MethCores set the path in the Run_MethCoresProfiler_setup.R:
 
 ## Add PATH where is located MethCoresProfiler-master folder
-MethCoresProfiler=("/Users/antoniopezone/Desktop/NARGB_2020/MethCoresProfiler-master/")
+MethCoresProfiler=("/Users/antoniopezone/Desktop/NARGAB_2020/MethCoresProfiler-master/")
 
 ## Add name of folder in which you have put "cgpos", "meta.map" and one folder with all tab delimited "text file of EpiHaplotypes in BINARY format (file.out)" 
 ## Default is "testData/" in MethCoresProfiler-master folder
