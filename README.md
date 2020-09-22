@@ -80,7 +80,7 @@ library("progress")
 library(pastecs)
 library("cowplot")
 
-It is possible to use the R package "pacman" present in the scripts to install the necessary R packages
+It is possible to use the R package "pacman" present in the scripts to install the necessary R packages or run Install_Dependencies.R
 
 ==============================================
 ABOUT THIS PACKAGE:
@@ -89,7 +89,7 @@ This package contains R scripts and function to run MethCoresProfiler analysis.
 
 Three executable scripts are provided with this version of MethCoresProfiler:
 
-  - 1_MethCores_Extractor.R:
+  - MethCores_Extractor.R:
     -> requires three types of input files: i. a tab delimited text file of EpiHaplotypes in BINARY format; ii. a tab delimited 
        text file containing information on the CpGs position in the sequence (or string), and; iii. a tab delimited text file 
        containing metadata (information) associated with each sample with the following columns: #SampleID, Tissue, Description, 
@@ -97,7 +97,7 @@ Three executable scripts are provided with this version of MethCoresProfiler:
        methylation profiles (frequency of single mCpG); ii, The tetrachoric correlations of CpGs; iii, The co-occurrence of two 
        mCpGs; iv, The taxonomic distribution of methylated species; v, The Shannon-Entropy index and the summary/sample, statistics 
        and plots.
-  - 2_MethCores_Combinator.R:
+  - MethCores_Combinator.R:
     -> takes as input a list of regions, all significant 2-mCpGs combinations annotated by MethCores_Extractor.R and
        a series of filtering parameters. The frequency of all mCpGs combinations (3 mCpGs or more) will be compared 
        to the expected frequency for independent events (x-square for independence statistics, p value ≤ 10-9) and 
@@ -105,7 +105,7 @@ Three executable scripts are provided with this version of MethCoresProfiler:
        The structure and frequency of significant mCpGs combinations (cores) and individual epialleles will be reported 
        (ComposCore and Tab_Epialleles, respectively). In the absence of significant mCpGs combinations, all epialleles 
        will be brought to the next step
-  - 3_MethCores_Analysis.R:
+  - MethCores_Analysis.R:
     -> takes as input epialleles annotated by MethCores_Combinator.R, a list of regions and a series of filtering parameters. 
        Generates generating heatmaps of their structure and frequency. In this step, the frequency of each epiallele in the 
        sample is compared (x-square test) to a random control (R), generated automatically by Module 1, with the same number 
@@ -132,8 +132,8 @@ MethCoresProfiler depends on R packages to perform all types of analysis and sta
 
 Users can install each dependency:
   1) following R instructions.
+  2) Install all dependencies using Install_Dependencies.R
  
-
 MethCoresProfiler SCRIPTS:
 ===============================================
 Extract the all files from the archive and run R scripts in order.
@@ -146,10 +146,21 @@ With this distribution are provided three R scripts and twenty-eight functions. 
 ===============================================
 USING MethCoresProfiler:
 ===============================================
-Before using MethCores set the path where the MethCoresProfiler_master/test_data/ folder is located in the three scripts (1_MethCores_Extractor.R, 2_MethCOres_Combinator.R, 3_MethCores_Analyst.R). If you open the scripts with RStudio, the path can be set automatically using "getwd" on line 23.
+Before using MethCores set the path in the Run_MethCoresProfiler_setup.R:
 
-For detailed instructions on the options and input/output formats of the MethCoresProfiler scripts we remand the user to the "MethCoresProfiler_help.doc" documentation contained in this package.
+## Add PATH where is located MethCoresProfiler-master
+MethCoresProfiler=("/Users/antoniopezone/Desktop/NAR_Genomics_and_Bioinformatics_submission_2020/Revisione_I/Inviato/MethCoresProfiler-master/")
 
+## Add name of folder in which you have put "cgpos", "meta.map" and one folder with all tab delimited "text file of EpiHaplotypes in BINARY format (file.out)" ## Default is "testData/" in MethCoresProfiler-master folder
+Data="testData/"
+
+## Add name of folder containing text file of EpiHaplotypes in BINARY format (file.out) 
+## ## Default is "out/" in MethCoresProfiler-master/testData folder
+input="out/"
+
+## Using Rstudio to Run_MethCoresProfiler_setup.R
+
+For detailed instructions on the options and input/output formats of the MethCoresProfiler scripts and how to change the parameters we remand the user to the "MethCoresProfiler_help.doc" documentation contained in this package.
 
 ===============================================
 KNOWN ISSUES OR BUGS:
