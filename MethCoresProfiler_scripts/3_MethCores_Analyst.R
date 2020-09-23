@@ -129,8 +129,8 @@ clusterExport(nProcessor, ls())
 #on.exit(stopCluster(nProcessor))
 #stopCluster(nProcessor)
 
-genes=list.files(path = ".", pattern="*.cgpos")
-maps=list.files(path = ".", pattern="*.map")
+genes=list.files(path = input_outputDir, pattern="*.cgpos")
+maps=list.files(path = input_outputDir, pattern="*.map")
 
 #Set pvalue
 pvalue=pvalue1 #0.0000000001
