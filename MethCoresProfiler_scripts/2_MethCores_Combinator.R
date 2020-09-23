@@ -110,8 +110,8 @@ destination_folder=paste(input_outputDir,"All_Combinations/",sep="")
 ######################################################## non toccare ####################################################
 #load clones and combination list
 #Mcloni <- list.files(pattern = '.*_Methylated.clones.txt')  #carica cloni Methylated
-genes=list.files(path = ".", pattern="*.cgpos")
-maps=list.files(path = ".", pattern="*.map")
+genes=list.files(path = input_outputDir, pattern="*.cgpos")
+maps=list.files(path = input_outputDir, pattern="*.map")
 #gene="DDO1.cgpos"
 #gene1=1
 
