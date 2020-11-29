@@ -1,0 +1,7 @@
+
+#### Sposta files out nella cartella 5_Results #########
+find /media/labveacelsius/HD4T/Chiariotti/DDO1_Chiariotti_2016/Analisi/ -name "*.out" -exec cp {}  /media/labveacelsius/HD4T/Chiariotti/DDO1_Chiariotti_2016/Analisi/MethCoresProfiler-master/out/  \; &
+find /media/labveacelsius/HD4T/Chiariotti/DDO1_Chiariotti_2016/Analisi/ -name "*.cgpos" -exec cp {}  /media/labveacelsius/HD4T/Chiariotti/DDO1_Chiariotti_2016/Analisi/MethCoresProfiler-master/  \; &
+find /media/labveacelsius/HD4T/Chiariotti/DDO1_Chiariotti_2016/Analisi/ -name "*.map" -exec cp {}  /media/labveacelsius/HD4T/Chiariotti/DDO1_Chiariotti_2016/Analisi/MethCoresProfiler-master/  \; &
+
+
