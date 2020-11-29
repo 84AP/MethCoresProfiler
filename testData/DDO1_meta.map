@@ -1,8 +1,0 @@
-SampleID	Tissue	Description	Group	Rep	id
-DDO1_M1_0	gut	P1	gut	M1	gut_P1_M1
-DDO1_M2_0	gut	P1	gut	M2	gut_P1_M2
-DDO1_M3_0	gut	P1	gut	M3	gut_P1_M3
-DDO1_M4_90	gut	P90	gut	M1	gut_P90_M1
-DDO1_M5_90	gut	P90	gut	M2	gut_P90_M2
-DDO1_M6_90	gut	P90	gut	M3	gut_P90_M3
-Random	Random	Random	Random	1	Random
