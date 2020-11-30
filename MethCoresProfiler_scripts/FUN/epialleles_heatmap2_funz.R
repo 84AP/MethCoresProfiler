@@ -143,7 +143,7 @@ epialleles_heatmap2 <- function(Epi_list,Stat,vertex_cutOFF,colorCodes,input_fol
                     title_gp = gpar(fontsize = 5, fontface = "bold"))
       pd = packLegend(lgd, lgd1,lgd2,direction = "vertical")
       
-      if (dim(CG_pos)[2]<=(as.numeric(substr(RAM, 1, 2))) {
+      if (dim(CG_pos)[2]<=(as.numeric(substr(RAM, 1, 2)))) {
       ## Clustering matrix
       row_dend =as.dendrogram(fastcluster::hclust(parallelDist(dim,method="binary",threads = nProcessor1)))
       #Dist=parallelDist(dim,method="binary", threads = nProcessor1)
